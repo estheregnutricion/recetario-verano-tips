@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recetario de Verano • Gazpachos, Hummus y Legumbres | EGNUTRICIONYSALUD</title>
+  <title>Recetario de Verano • Gazpachos, Hummus, Legumbres, Barbacoas & Helados | EGNUTRICIONYSALUD</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
@@ -88,19 +88,22 @@
           <i data-lucide="home" class="w-4 h-4 text-amber-600"></i> Inicio
         </button>
         <button onclick="switchTab('gazpachos')" id="tab-gazpachos" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
-          <i data-lucide="citrus" class="w-4 h-4 text-brand-tomato"></i> 1. Gazpachos & Sopas Frías
+          <i data-lucide="citrus" class="w-4 h-4 text-brand-tomato"></i> 1. Gazpachos & Cremas
         </button>
         <button onclick="switchTab('hummus')" id="tab-hummus" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
-          <i data-lucide="soup" class="w-4 h-4 text-amber-600"></i> 2. Hummus & Cremas Frías
+          <i data-lucide="soup" class="w-4 h-4 text-amber-600"></i> 2. Hummus & Patés
         </button>
         <button onclick="switchTab('ensaladas')" id="tab-ensaladas" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
-          <i data-lucide="salad" class="w-4 h-4 text-emerald-600"></i> 3. Ensaladas de Legumbre
+          <i data-lucide="salad" class="w-4 h-4 text-emerald-600"></i> 3. Ensaladas Completas
         </button>
-        <button onclick="switchTab('salteados')" id="tab-salteados" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
-          <i data-lucide="flame" class="w-4 h-4 text-orange-500"></i> 4. Salteados & Boloñesa Express
+        <button onclick="switchTab('barbacoas')" id="tab-barbacoas" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
+          <i data-lucide="flame" class="w-4 h-4 text-orange-500"></i> 4. Barbacoas & Eventos
+        </button>
+        <button onclick="switchTab('helados')" id="tab-helados" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
+          <i data-lucide="ice-cream" class="w-4 h-4 text-pink-500"></i> 5. Helados Caseros
         </button>
         <button onclick="switchTab('recursos')" id="tab-recursos" class="nav-tab px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-slate-600 hover:bg-white/80">
-          <i data-lucide="folder-heart" class="w-4 h-4 text-purple-600"></i> 5. Recursos & Documentos
+          <i data-lucide="folder-heart" class="w-4 h-4 text-purple-600"></i> 6. Recursos & Documentos
         </button>
       </div>
     </nav>
@@ -129,7 +132,7 @@
             Recetario Digital de Verano
           </h2>
           <p class="text-amber-50 text-sm sm:text-lg mt-3 leading-relaxed">
-            Bienvenido/a a tu guía:Tips y recetas frescas, fáciles y muy nutritivas a base de <strong>gazpachos, hummus y legumbres</strong> para comer saludable sin complicaciones.
+            Bienvenido/a a tu guía: Tips y recetas frescas y fáciles: <strong>gazpachos, hummus, legumbres, barbacoas saludables y helados caseros</strong> para disfrutar comiendo sano y sin complicaciones.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <button onclick="switchTab('gazpachos')" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm hover:bg-amber-50 transition-all shadow-sm">
@@ -139,6 +142,41 @@
               <i data-lucide="file-text" class="w-4 h-4 text-amber-200"></i> Ver Recursos Descargables
             </button>
           </div>
+        </div>
+      </div>
+
+      <!-- TARJETA DESTACADA: CONSEJOS VACACIONES Y VIDA SOCIAL -->
+      <div class="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100/60 border border-amber-200/80 rounded-2xl p-6 sm:p-8 shadow-xs relative overflow-hidden">
+        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-amber-200/60">
+          <div class="p-2.5 bg-amber-600 text-white rounded-xl shadow-2xs">
+            <i data-lucide="sun-medium" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider block">Nutrición en Vacaciones & Eventos</span>
+            <h3 class="text-xl sm:text-2xl font-serif font-bold text-slate-900">Vida Social y Flexibilidad Consciente</h3>
+          </div>
+        </div>
+
+        <div class="space-y-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <div class="bg-white/80 p-4 rounded-xl border border-amber-200/50 shadow-2xs">
+            <p><strong class="text-amber-800 font-bold">• NO RENUNCIES A TU VIDA SOCIAL</strong> porque te estés cuidando, no es realista pretender ser igual de riguroso durante las vacaciones con nuestro plan de alimentación. Aparecerán eventos y tentaciones aunque tratemos de evitarlo y tendremos que enfrentarnos a esas situaciones. No digas a todo que "no", corres el riesgo de descontrolarte después de tanta restricción y liarte la manta a la cabeza en un momento dado. Mejor darse "permiso" para romper conscientemente la dieta de vez en cuando, de forma consciente y sin culpabilidad.</p>
+          </div>
+          <div class="bg-white/80 p-4 rounded-xl border border-amber-200/50 shadow-2xs">
+            <p><strong class="text-amber-800 font-bold">• Intenta COMER DE LA FORMA MÁS NORMAL POSIBLE CUANDO ESTÉS EN CASA</strong>, ni "compensar" comiendo menos ni descuidar la planificación de las comidas semanales. Prioriza platos de verdura, legumbres, pescado y preparaciones sencillas (plancha, vapor, ensaladas) e intenta mantenerte activo.</p>
+          </div>
+        </div>
+
+        <!-- Descargable asociado -->
+        <div class="mt-6 pt-4 border-t border-amber-200/60 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-2.5 text-xs text-amber-900 font-medium">
+            <i data-lucide="file-check" class="w-5 h-5 text-amber-600 shrink-0"></i>
+            <span>Guía completa descargable con estrategias para vacaciones y salidas sociales</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1phczWpBJgwLAfM5pKQE42--o8P5dmBPD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition-all shadow-xs shrink-0">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Guía de Vacaciones y Salidas Sociales</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 ml-0.5"></i>
+          </a>
         </div>
       </div>
 
@@ -161,7 +199,7 @@
         </div>
 
         <p class="text-xs sm:text-sm text-purple-200 mb-6 leading-relaxed">
-          Para completar información y dar ideas visuales dispones de dos guías completas en PDF directamente accesibles desde el recetario:
+          Para completar información y dar ideas visuales dispones de guías completas en PDF directamente accesibles desde el recetario:
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -203,7 +241,7 @@
       <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
         <div class="mb-6 pb-4 border-b border-slate-100">
           <h3 class="text-2xl font-serif font-bold text-slate-900">¿Qué vas a encontrar en este recetario?</h3>
-          <p class="text-xs text-slate-500 mt-1">Explora cada una de las 5 secciones interactivas organizadas en las pestañas superiores:</p>
+          <p class="text-xs text-slate-500 mt-1">Explora cada una de las secciones interactivas organizadas en las pestañas superiores:</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -218,7 +256,7 @@
             </div>
             <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-red-600 transition-colors">1. Gazpachos & Sopas Frías</h4>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Receta base con <strong>calculador interactivo de raciones</strong>, secreto de maceración, decenas de variaciones con frutas (sandía, fresas, cerezas, melocotón) y verduras, aliños exóticos y trucos de cocinado.
+              Receta base con <strong>calculador interactivo de raciones</strong>, secreto de maceración, decenas de variaciones con frutas (sandía, fresas, cerezas) y verduras, aliños exóticos y trucos.
             </p>
             <div class="mt-4 flex items-center text-xs font-bold text-red-600 gap-1 group-hover:translate-x-1 transition-transform">
               <span>Ver Gazpachos</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
@@ -233,9 +271,9 @@
               </span>
               <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded uppercase">Sección 02</span>
             </div>
-            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">2. Hummus & Cremas Frías</h4>
+            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">2. Hummus & Patés Vegetales</h4>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Fórmula tradicional de garbanzo y <strong>12 variantes gourmet</strong> (pimiento asado, remolacha rosa, boniato, alcachofa, sabor pizza, espinacas con feta, atún vegano), hummus con otras legumbres y versión dulce.
+              Fórmula tradicional de garbanzo y <strong>12 variantes gourmet</strong> (pimiento asado, remolacha, boniato, alcachofa, sabor pizza, sobrasada vegana), hummus de otras legumbres y versión dulce.
             </p>
             <div class="mt-4 flex items-center text-xs font-bold text-amber-600 gap-1 group-hover:translate-x-1 transition-transform">
               <span>Ver Hummus</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
@@ -250,46 +288,63 @@
               </span>
               <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">Sección 03</span>
             </div>
-            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-emerald-600 transition-colors">3. Ensaladas de Legumbre</h4>
+            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-emerald-600 transition-colors">3. Ensaladas & Tuppers de Verano</h4>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              La <strong>Fórmula Maestra de Montaje en 4 Pasos</strong> para crear platos únicos equilibrados. Galería con salpicones de alubias, lentejas con yogur, bacalao con naranja y salmón con higos.
+              La <strong>Fórmula Maestra de Montaje en 4 Pasos</strong> para crear platos equilibrados, ideas de tupper rápido para playa/montaña y snacks frescos.
             </p>
             <div class="mt-4 flex items-center text-xs font-bold text-emerald-600 gap-1 group-hover:translate-x-1 transition-transform">
               <span>Ver Ensaladas</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </div>
           </div>
 
-          <!-- Card 4 -->
-          <div onclick="switchTab('salteados')" class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-orange-50/40 hover:border-orange-200 cursor-pointer transition-all group">
+          <!-- Card 4 (MODIFICADA: BARBACOAS & EVENTOS SOCIALES) -->
+          <div onclick="switchTab('barbacoas')" class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-orange-50/40 hover:border-orange-200 cursor-pointer transition-all group">
             <div class="flex items-center justify-between mb-3">
               <span class="p-2.5 bg-orange-100 text-orange-600 rounded-xl group-hover:bg-orange-600 group-hover:text-white transition-colors">
                 <i data-lucide="flame" class="w-5 h-5"></i>
               </span>
               <span class="text-[10px] font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded uppercase">Sección 04</span>
             </div>
-            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-orange-600 transition-colors">4. Salteados & Boloñesa Express</h4>
+            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-orange-600 transition-colors">4. Barbacoas & Eventos Sociales</h4>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Comidas y cenas express en 10 minutos aprovechando botes de conservas de calidad. Incluye la receta de <strong>Boloñesa Vegetal multiusos</strong> para fajitas, patatas y musaka.
+              Cómo versionar una barbacoa saludable con verduras y marinados, picoteos nutritivos para la mesa, guía inteligente de bebidas y postres veraniegos.
             </p>
             <div class="mt-4 flex items-center text-xs font-bold text-orange-600 gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Ver Salteados</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <span>Ver Barbacoas & Eventos</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </div>
           </div>
 
-          <!-- Card 5 -->
-          <div onclick="switchTab('recursos')" class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-purple-50/40 hover:border-purple-200 cursor-pointer transition-all group md:col-span-2 lg:col-span-2">
+          <!-- Card 5 (NUEVA: HELADOS CASEROS) -->
+          <div onclick="switchTab('helados')" class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-pink-50/40 hover:border-pink-200 cursor-pointer transition-all group">
+            <div class="flex items-center justify-between mb-3">
+              <span class="p-2.5 bg-pink-100 text-pink-600 rounded-xl group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                <i data-lucide="ice-cream" class="w-5 h-5"></i>
+              </span>
+              <span class="text-[10px] font-bold text-pink-700 bg-pink-100 px-2 py-0.5 rounded uppercase">Sección 05</span>
+            </div>
+            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-pink-600 transition-colors">5. Helados Caseros Saludables</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Fórmula para helados cremosos a base de fruta, yogur o legumbre sorpresa, ideas de combinaciones irresistibles y enlace a la publicación de Instagram.
+            </p>
+            <div class="mt-4 flex items-center text-xs font-bold text-pink-600 gap-1 group-hover:translate-x-1 transition-transform">
+              <span>Ver Helados</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div onclick="switchTab('recursos')" class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-purple-50/40 hover:border-purple-200 cursor-pointer transition-all group">
             <div class="flex items-center justify-between mb-3">
               <span class="p-2.5 bg-purple-100 text-purple-600 rounded-xl group-hover:bg-purple-600 group-hover:text-white transition-colors">
                 <i data-lucide="folder-heart" class="w-5 h-5"></i>
               </span>
-              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">Sección 05 • Documentación</span>
+              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">Sección 06</span>
             </div>
-            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-purple-600 transition-colors">5. Recursos & Documentos de Ampliación</h4>
+            <h4 class="font-serif font-bold text-slate-900 text-lg group-hover:text-purple-600 transition-colors">6. Recursos & Documentos</h4>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Acceso a enlaces directos a Google Drive para consultar o descargar la Guía de Ampliación Nutricional en PDF y la Infografía de Ensaladas como Plato Completo.
+              Enlaces directos a Google Drive para consultar o descargar las Guías de Ampliación Nutricional, Infografías y Estrategias en PDF.
             </p>
             <div class="mt-4 flex items-center text-xs font-bold text-purple-600 gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Abrir Recursos en Drive</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <span>Abrir Recursos</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </div>
           </div>
 
@@ -321,7 +376,7 @@
             <div class="font-bold text-amber-400 text-sm mb-1 flex items-center gap-1.5">
               <i data-lucide="search" class="w-4 h-4"></i> Buscador en Tiempo Real
             </div>
-            <p class="text-slate-300">Escribe cualquier ingrediente en la barra superior (ej. "aguacate", "atún", "feta") para filtrar recetas al instante.</p>
+            <p class="text-slate-300">Escribe cualquier ingrediente en la barra superior (ej. "aguacate", "kombucha", "helado", "feta") para filtrar recetas al instante.</p>
           </div>
 
           <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
@@ -336,7 +391,7 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECTION 1: GAZPACHOS & SOPAS FRÍAS -->
+    <!-- SECTION 1: GAZPACHOS & CREMAS FRÍAS -->
     <!-- ========================================== -->
     <section id="sec-gazpachos" class="tab-content hidden space-y-8">
       
@@ -348,7 +403,7 @@
           </span>
           <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Gazpachos & Sopas Frías</h2>
           <p class="text-red-50 text-sm sm:text-base mt-2">
-            La joya de la corona del verano. Receta tradicional con escalador interactivo de raciones, maceración secreta y decenas de combinaciones con frutas y verduras.
+            Receta tradicional con escalador interactivo de raciones, maceración secreta y decenas de combinaciones con frutas y verduras.
           </p>
         </div>
       </div>
@@ -380,7 +435,7 @@
               <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Pimiento verde italiano</span> <span id="gz-ing-pepper" class="font-bold text-slate-900">1 ud.</span></li>
               <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Cebolla dulce / cebolleta</span> <span id="gz-ing-onion" class="font-bold text-slate-900">0.5 ud.</span></li>
               <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Diente de ajo (sin germen)</span> <span id="gz-ing-garlic" class="font-bold text-slate-900">1-2 uds.</span></li>
-              <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Pan duro (opcional)</span> <span id="gz-ing-bread" class="font-bold text-slate-900">1.0 rebanada</span></li>
+              <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Pan (opcional)</span> <span id="gz-ing-bread" class="font-bold text-slate-900">1.0 rebanada</span></li>
               <li class="flex justify-between py-1.5 border-b border-slate-100"><span class="text-slate-600">Aceite de Oliva Virgen Extra</span> <span id="gz-ing-oil" class="font-bold text-slate-900">6 cdas. soperas</span></li>
               <li class="flex justify-between py-1.5"><span class="text-slate-600">Vinagre de Jerez & Sal</span> <span class="font-bold text-slate-900">Al gusto</span></li>
             </ul>
@@ -402,7 +457,7 @@
               <div onclick="toggleStep(this)" class="p-3.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 transition-all cursor-pointer flex items-start gap-3 group">
                 <span class="step-num w-6 h-6 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Lavado y Lavado de Verduras</h4>
+                  <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Prepara las Verduras</h4>
                   <p class="text-xs text-slate-600 mt-0.5">Lava bien los tomates, el pepino y el pimiento. Retira el germen central del ajo para evitar que repita.</p>
                 </div>
               </div>
@@ -411,7 +466,7 @@
                 <span class="step-num w-6 h-6 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
                 <div>
                   <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Troceado y Maceración</h4>
-                  <p class="text-xs text-slate-600 mt-0.5">Trocea las verduras en dados grandes. Colócalas en un cuenco grande con sal, el vinagre y el AOVE. Cubre y refrigera 1-2h.</p>
+                  <p class="text-xs text-slate-600 mt-0.5">Trocea las verduras en dados grandes. Colócalas en un cuenco grande con sal, el vinagre y el AOVE. Cubre y refrigera 1-2h si quieres un extra de sabor.</p>
                 </div>
               </div>
 
@@ -427,7 +482,7 @@
                 <span class="step-num w-6 h-6 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">4</span>
                 <div>
                   <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Colado & Reposo Frío</h4>
-                  <p class="text-xs text-slate-600 mt-0.5">Pasa por el chino si prefieres una textura ultra sedosa. Añade agua muy fría si lo quieres más líquido y sirve muy frío.</p>
+                  <p class="text-xs text-slate-600 mt-0.5">Pasa por el chino si prefieres una textura ultra sedosa. Añade agua muy fría si lo quieres más líquido (o hielos) y sirve muy frío.</p>
                 </div>
               </div>
             </div>
@@ -517,7 +572,7 @@
             </li>
             <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
               <strong class="text-slate-900 block text-sm">Toque Picante:</strong>
-              Añade unos drops de sriracha, jalapeño en rodajas o una pizca de pimentón picante de la Vera.
+              Añade unos drops de sriracha o piri-piri, jalapeño en rodajas o una pizca de pimentón picante de la Vera.
             </li>
             <li class="p-3 bg-slate-50 rounded-xl border border-slate-100">
               <strong class="text-slate-900 block text-sm">Aromático de Hierbas:</strong>
@@ -533,11 +588,11 @@
           <ul class="space-y-3 text-xs text-slate-700">
             <li class="p-3 bg-red-50/50 rounded-xl border border-red-100">
               <strong class="text-slate-900 block text-sm">Ajo suave sin digestiones pesadas:</strong>
-              Usa ajo negro fermentado o asa previamente los ajos enteros en el horno.
+              Usa ajo negro fermentado o asa previamente los ajos enteros en el horno (retirando el germen).
             </li>
             <li class="p-3 bg-red-50/50 rounded-xl border border-red-100">
               <strong class="text-slate-900 block text-sm">Espesar sin pan:</strong>
-              Añade un trozo de calabaza o zanahoria cocida, o medio aguacate para ganar cremosidad sin gluten.
+              Añade un trozo de calabaza o manzana o zanahoria cocida, (opción sin gluten).
             </li>
             <li class="p-3 bg-red-50/50 rounded-xl border border-red-100">
               <strong class="text-slate-900 block text-sm">Textura perfecta sin diluir:</strong>
@@ -551,7 +606,7 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECTION 2: HUMMUS & CREMAS FRÍAS -->
+    <!-- SECTION 2: HUMMUS & PATÉS VEGETALES -->
     <!-- ========================================== -->
     <section id="sec-hummus" class="tab-content hidden space-y-8">
       
@@ -563,7 +618,7 @@
           </span>
           <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Hummus & Cremas Frías</h2>
           <p class="text-amber-50 text-sm sm:text-base mt-2">
-            La forma más versátil y apetecible de comer legumbres en verano. La fórmula tradicional de garbanzo y 12 variaciones gourmet llenas de color y sabor.
+            La forma más versátil para introducir legumbres en verano. La fórmula tradicional de garbanzo y 12 variaciones llenas de color y sabor.
           </p>
         </div>
       </div>
@@ -601,7 +656,7 @@
           </div>
         </div>
 
-        <!-- EXPLORER OF HUMMUS VARIATIONS (12 RECIPES) -->
+        <!-- EXPLORER OF HUMMUS/PATÉS VARIATIONS (12 RECIPES) -->
         <div class="lg:col-span-7 bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-4">
             <div>
@@ -614,15 +669,15 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[420px] overflow-y-auto pr-1 no-scrollbar">
             
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
-              <span class="text-[10px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded uppercase">Pimiento Asado</span>
+              <span class="text-[10px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded uppercase">Muhamara</span>
               <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus de Pimiento Rojo</h4>
-              <p class="text-xs text-slate-600 mt-1">1 pimiento Lamuyo asado o 3-4 pimientos del piquillo en conserva.</p>
+              <p class="text-xs text-slate-600 mt-1">Pimiento rojo asado + nueces </p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
               <span class="text-[10px] font-bold text-fuchsia-600 bg-fuchsia-100 px-2 py-0.5 rounded uppercase">Remolacha</span>
               <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus Rosa de Remolacha</h4>
-              <p class="text-xs text-slate-600 mt-1">1 remolacha cocida (~200g). Decorar con toque de hierbabuena fresca picada.</p>
+              <p class="text-xs text-slate-600 mt-1">1 remolacha cocida (~200g) + 1cda yogur griego ligero. Decorar con toque de hierbabuena fresca picada.</p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
@@ -638,9 +693,9 @@
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
-              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">Berenjena</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus con Tomate Seco</h4>
-              <p class="text-xs text-slate-600 mt-1">1 berenjena asada + 5-6 tomates secos rehidratados. Aromatizar con orégano.</p>
+              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded uppercase">Babaghanush</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus de berenjena</h4>
+              <p class="text-xs text-slate-600 mt-1">Igual que el tradicional pero cambiando garbanzos por 1 berenjena asada.</p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
@@ -652,25 +707,25 @@
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
               <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded uppercase">Alcachofas</span>
               <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus de Alcachofa</h4>
-              <p class="text-xs text-slate-600 mt-1">8 corazones en conserva. Servir con arándanos secos y sésamo.</p>
+              <p class="text-xs text-slate-600 mt-1">8 corazones en conserva + 1/2 limon exprimido + anarcados o nueces + albahaca, sal y pimienta (opcional anchoas)</p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
               <span class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded uppercase">Espinacas</span>
               <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus Verde con Feta</h4>
-              <p class="text-xs text-slate-600 mt-1">200g espinaca fresca o al vapor + zumo de lima. Servir con queso feta y granada.</p>
+              <p class="text-xs text-slate-600 mt-1">200g espinaca fresca o al vapor + zumo de lima + queso feta.</p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
-              <span class="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded uppercase">Espárragos</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus de Trigueros</h4>
-              <p class="text-xs text-slate-600 mt-1">Manojo de espárragos trigueros cocidos. Decorar con eneldo, cilantro y almendras.</p>
+              <span class="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded uppercase">Vegano</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-1">SOBRASADA VEGANA</h4>
+              <p class="text-xs text-slate-600 mt-1">Tomates secos hidratados, puñado de piñones o anacardos o nueces + 1cta comino, pimentón, orégano, sal y 1 ajo opcional, aove y agua según textura.</p>
             </div>
 
             <div class="p-3 bg-slate-50 hover:bg-amber-50/40 rounded-xl border border-slate-200 transition-all">
-              <span class="text-[10px] font-bold text-teal-700 bg-teal-100 px-2 py-0.5 rounded uppercase">Vegano</span>
-              <h4 class="font-bold text-slate-900 text-sm mt-1">Hummus "Atún" Vegano</h4>
-              <p class="text-xs text-slate-600 mt-1">Añadir 1 lámina de alga nori triturada para un toque marino irresistible.</p>
+              <span class="text-[10px] font-bold text-teal-700 bg-teal-100 px-2 py-0.5 rounded uppercase">Aguacate</span>
+              <h4 class="font-bold text-slate-900 text-sm mt-1">GUACAMOLE TRADICIONAL</h4>
+              <p class="text-xs text-slate-600 mt-1">Aguacate + cebolla morada + tomate + aove + lima y sal.</p>
             </div>
 
           </div>
@@ -695,7 +750,7 @@
               Con un puñado de albahaca fresca y piñones; o con romero y arándanos secos.
             </li>
             <li class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
-              <strong class="text-slate-900 block text-sm">Hummus de Alubias Pintas o Frijoles:</strong>
+              <strong class="text-slate-900 block text-sm">Hummus de Alubias Pintas:</strong>
               Con orégano, pimentón ahumado, comino, zumo de lima y sésamo.
             </li>
             <li class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
@@ -718,7 +773,7 @@
 
             <ul class="space-y-2 text-xs text-slate-700">
               <li class="flex items-center gap-2">• 1 cda. sopera de cacao puro en polvo</li>
-              <li class="flex items-center gap-2">• 1 cda. miel, sirope de arce o fruta seca rehidratada</li>
+              <li class="flex items-center gap-2">• 1 cda. miel o dátiles o edulcorante (opcional)</li>
               <li class="flex items-center gap-2">• Canela en polvo y esencia de vainilla al gusto</li>
               <li class="flex items-center gap-2">• <strong>Extra Cremosidad:</strong> Añadir 1 plátano maduro o boniato asado</li>
               <li class="flex items-center gap-2">• Cambia el tahini por crema de cacahuete o almendra</li>
@@ -735,7 +790,7 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECTION 3: ENSALADAS DE LEGUMBRE -->
+    <!-- SECTION 3: ENSALADAS COMPLETAS -->
     <!-- ========================================== -->
     <section id="sec-ensaladas" class="tab-content hidden space-y-8">
       
@@ -743,19 +798,132 @@
       <div class="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden">
         <div class="relative z-10 max-w-2xl">
           <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider text-white mb-3 inline-block">
-            Sección 03 • Platos Únicos de Verano
+            Sección 03 • Platos de Verano & Tuppers
           </span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Ensaladas & Salpicones de Legumbre</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Ensaladas, Salpicones & Tuppers de Verano</h2>
           <p class="text-emerald-50 text-sm sm:text-base mt-2">
-            Nutritivas, saciantes y perfectas para llevar en tupper a la playa o al trabajo. Aprende la fórmula infalible de montaje.
+            Nutritivas, saciantes y perfectas para llevar en tupper a la playa, montaña o al trabajo. Aprende la fórmula de montaje e ideas de preparación rápida.
           </p>
+        </div>
+      </div>
+
+      <!-- TARJETA DESCARGABLE DIRECTA A LA GUÍA VISUAL -->
+      <div class="bg-emerald-50 border border-emerald-200/80 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-2xs">
+        <div class="flex items-center gap-3.5">
+          <div class="p-3 bg-emerald-600 text-white rounded-xl shadow-2xs shrink-0">
+            <i data-lucide="file-check-2" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider block">Recurso Descargable en PDF</span>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900">Guía Visual: Ensalada como Plato Completo</h3>
+            <p class="text-xs text-slate-600 mt-0.5">Infografía práctica para componer ensaladas equilibradas, saciantes y nutritivas en minutos.</p>
+          </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1O6Q_U3HFk38UT2pfpucE2LPiSnvuhRbn/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition-all shadow-xs shrink-0 w-full sm:w-auto justify-center">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Ver / Descargar Guía Visual (PDF)</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- SECCIÓN: IDEAS DE TUPPER RÁPIDO PARA DÍAS FUERA (PLAYA O MONTAÑA) -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">¿Pasamos el día fuera?</span>
+          <h3 class="text-2xl font-serif font-bold text-slate-900 mt-1">Ideas de Tupper Rápido (Playa o Montaña)</h3>
+          <p class="text-xs text-slate-500 mt-1">Ideas para llevar preparadas de casa o mezclar directamente en el lugar de comer.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Opción 1: Ensalada de Legumbres -->
+          <div class="bg-emerald-50/50 border border-emerald-200/80 rounded-2xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2.5 mb-3 pb-2 border-b border-emerald-200/60">
+                <span class="p-2 bg-emerald-600 text-white rounded-lg">
+                  <i data-lucide="soup" class="w-4 h-4"></i>
+                </span>
+                <h4 class="font-serif font-bold text-slate-900 text-base">Ensalada de Legumbres</h4>
+              </div>
+              <ol class="space-y-2.5 text-xs text-slate-700 list-decimal list-inside">
+                <li class="leading-relaxed"><strong>Lavar y escurrir</strong> un bote de garbanzos cocidos.</li>
+                <li class="leading-relaxed"><strong>Lavar y trocear</strong> el tomate, la cebolla, el pepino y el pimiento en trocitos pequeños.</li>
+                <li class="leading-relaxed"><strong>Añadir una lata de atún o bonito</strong> (en el momento de comer).</li>
+                <li class="leading-relaxed"><strong>Aliñar</strong> con vinagre de manzana, AOVE y sal (en el momento de comer).</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Opción 2: Ensalada de Pasta o Patata -->
+          <div class="bg-amber-50/50 border border-amber-200/80 rounded-2xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2.5 mb-3 pb-2 border-b border-amber-200/60">
+                <span class="p-2 bg-amber-600 text-white rounded-lg">
+                  <i data-lucide="utensils" class="w-4 h-4"></i>
+                </span>
+                <h4 class="font-serif font-bold text-slate-900 text-base">Ensalada de Pasta o Patata</h4>
+              </div>
+              <p class="text-[11px] text-amber-900 bg-amber-100/70 p-2 rounded-lg mb-2.5">
+                <em>Tip:</em> Puedes usar pasta integral, pasta de legumbres (ej. lenteja roja) o patata cocida de bote.
+              </p>
+              <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
+                <li class="leading-relaxed"><strong>Cocer la pasta</strong> o usar patata cocida (ej: de bote).</li>
+                <li class="leading-relaxed"><strong>Proteína:</strong> Cocer huevos o preparar tiras de pechuga de pollo (blíster) o enlatados.</li>
+                <li class="leading-relaxed">Añadir un puñado de <strong>hojas verdes</strong> y tomatito troceado.</li>
+                <li class="leading-relaxed">Añadir 8 aceitunas, 1/4 de aguacate o queso feta (opcional).</li>
+                <li class="leading-relaxed"><strong>Aliñar al gusto:</strong> AOVE, albahaca, vinagre y sal (al comer).</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Opción 3: Ensalada de Patata Express -->
+          <div class="bg-orange-50/50 border border-orange-200/80 rounded-2xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2.5 mb-3 pb-2 border-b border-orange-200/60">
+                <span class="p-2 bg-orange-600 text-white rounded-lg">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </span>
+                <h4 class="font-serif font-bold text-slate-900 text-base">Ensalada de Patata Express</h4>
+              </div>
+              <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
+                <li class="leading-relaxed">Usar <strong>patata cocida de bote</strong>.</li>
+                <li class="leading-relaxed"><strong>Proteína:</strong> Cocer huevos o pechuga de pollo en tiras (blíster) o latas.</li>
+                <li class="leading-relaxed">Añadir <strong>tiras de pimiento rojo asado</strong> de bote.</li>
+                <li class="leading-relaxed">Añadir <strong>alcachofa troceada</strong> (bote) y tomatitos.</li>
+                <li class="leading-relaxed"><strong>Aliñar al gusto:</strong> AOVE, albahaca, vinagre y sal (al comer).</li>
+                <li class="leading-relaxed"><em>Toppings opcionales:</em> nueces, pepinillos...</li>
+              </ol>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- EJEMPLOS REALES DE FOTO -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-xs space-y-3">
+          <div class="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="camera" class="w-4 h-4"></i> Ejemplos Concretos de Tupper Real:
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+              <span class="font-bold text-amber-300 block mb-1">• Tupper de Garbanzos:</span>
+              <p class="text-slate-300 leading-relaxed">
+                Ensalada de garbanzos + pimiento rojo en tiras de bote + champiñones de bote + pepinillos + lata de atún + aceite de oliva V.E. + pimienta negra y orégano.
+              </p>
+            </div>
+            <div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+              <span class="font-bold text-amber-300 block mb-1">• Tupper de Patata:</span>
+              <p class="text-slate-300 leading-relaxed">
+                Ensalada de patata de bote cocida + tiras de pollo de blíster y un huevo duro + pimiento rojo en tiras de bote + champiñones de bote + pepinillos + aceite de oliva V.E.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- FORMULA BUILDER -->
       <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
-        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-2">La Fórmula Maestra de la Ensalada Completa</h3>
-        <p class="text-xs text-slate-500 mb-6">Combina 1 elemento de cada bloque para crear combinaciones infinitas:</p>
+        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-2">La Fórmula Sencilla de la Ensalada Completa de legumbres</h3>
+        <p class="text-xs text-slate-500 mb-6">Combina 1 elemento de cada bloque para crear combinaciones infinitas (recuerda que tienes un descargable de ensaladas completas generales):</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-100">
@@ -765,55 +933,55 @@
 
           <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-100">
             <span class="font-bold text-emerald-800 text-sm block mb-2">2. Hojas y Hortalizas</span>
-            <p class="text-slate-600">Lechuga, canónigos, rúcula, espinacas. Picadillo de tomate, pepino, pimiento, cebolla, remolacha o chucrut.</p>
+            <p class="text-slate-600">Lechuga, canónigos, rúcula, espinacas. Picadillo de tomate, pepino, pimiento, cebolla, remolacha, chucrut...</p>
           </div>
 
           <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-100">
-            <span class="font-bold text-emerald-800 text-sm block mb-2">3. Fruta & Crujientes</span>
-            <p class="text-slate-600">Manzana, granada, melón, uvas o mango. Añadir semillas, frutos secos o copos de cereales integrales.</p>
+            <span class="font-bold text-emerald-800 text-sm block mb-2">3. Proteína Extra </span>
+            <p class="text-slate-600">Enlatados (Atún, caballa, melva, sardinillas, berberechos...), bacalao, salmón, huevo duro, tiras de pollo, tofu, queso fresco, feta...</p>
           </div>
 
           <div class="p-4 bg-emerald-50/60 rounded-xl border border-emerald-100">
-            <span class="font-bold text-emerald-800 text-sm block mb-2">4. Proteína Extra & Aliño</span>
-            <p class="text-slate-600">Atún, bacalao, salmón, huevo duro, queso feta, tiras de pavo o tofu. Aliñar con AOVE o salsa de yogur.</p>
+            <span class="font-bold text-emerald-800 text-sm block mb-2">4. Fruta & Extras & Aliño</span>
+            <p class="text-slate-600">Manzana, granada, melón, uvas o mango. Semillas, frutos secos... Aliñar con AOVE o salsa de yogur.</p>
           </div>
         </div>
       </div>
 
-      <!-- RECIPE GALLERY (IDEAS FROM PDF) -->
+      <!-- RECIPE GALLERY -->
       <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
-        <h3 class="text-xl font-serif font-bold text-slate-900 mb-6">Ideas Destacadas de la Chef</h3>
+        <h3 class="text-xl font-serif font-bold text-slate-900 mb-6">Ideas Destacadas</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
-            <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded uppercase">Salpicón Clásico</span>
-            <h4 class="font-bold text-slate-900 text-base mt-2">Salpicón de Alubias Blancas</h4>
+            <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded uppercase">Tradicional</span>
+            <h4 class="font-bold text-slate-900 text-base mt-2">Ensalada fresca de garbazos</h4>
+            <p class="text-xs text-slate-600 mt-2">Garbanzos, lima exprimida, atún al natural, pimiento rojo y cebolla morada (opcional queso cottage y aguacate).</p>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded uppercase">Vinagreta</span>
+            <h4 class="font-bold text-slate-900 text-base mt-2">Ensalada de lentejas</h4>
+            <p class="text-xs text-slate-600 mt-2">Lentejas, mix taquitos verdura (pimiento rojo, cherrys, pepino, cebolla morada), huevo duro y queso feta con vinagreta: aove+lima+1cda vinagre + sal (agitar en un bote para emulsionar) .</p>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded uppercase">Con mango</span>
+            <h4 class="font-bold text-slate-900 text-base mt-2">Ensalada de garbanzos, mango y yogur</h4>
+            <p class="text-xs text-slate-600 mt-2">Gabanzos, mix verduras (pimiento rojo y verde, cebolla morada, pepino, rabanitos), caballa + salsa de yogur: 1 yogur nat + lima + sal y pimienta + 1cta mostaza.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+            <span class="text-[10px] font-bold bg-red-100 text-red-800 px-2 py-0.5 rounded uppercase">Salpicón</span>
+            <h4 class="font-bold text-slate-900 text-base mt-2">Salpicón de Alubias</h4>
             <p class="text-xs text-slate-600 mt-2">Cebolla, pepino, pimiento rojo/verde, tomate picadito, atún de calidad, huevo duro y aguacate en dados.</p>
           </div>
 
           <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
-            <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded uppercase">Refrescante</span>
-            <h4 class="font-bold text-slate-900 text-base mt-2">Salpicón de Lentejas y Yogur</h4>
-            <p class="text-xs text-slate-600 mt-2">Pepino y cebolleta fina, lentejas, huevo duro, aceitunas verdes y almendras. Aliño especial de comino y yogur.</p>
-          </div>
-
-          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
-            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded uppercase">Maritima</span>
+            <span class="text-[10px] font-bold bg-orange-100 text-orange-800 px-2 py-0.5 rounded uppercase">Marítima</span>
             <h4 class="font-bold text-slate-900 text-base mt-2">Salpicón Marino con Anchoas</h4>
-            <p class="text-xs text-slate-600 mt-2">Tomate, cebolla morada, pimiento, garbanzos cocidos, anchoas o boquerones en vinagre, yogur y eneldo fresco.</p>
-          </div>
-
-          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
-            <span class="text-[10px] font-bold bg-red-100 text-red-800 px-2 py-0.5 rounded uppercase">Proteica</span>
-            <h4 class="font-bold text-slate-900 text-base mt-2">Ensalada de Canónigos y Feta</h4>
-            <p class="text-xs text-slate-600 mt-2">Canónigos frescos, lentejas, gajos de manzana o granada, dados de queso feta y nueces troceadas.</p>
-          </div>
-
-          <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
-            <span class="text-[10px] font-bold bg-orange-100 text-orange-800 px-2 py-0.5 rounded uppercase">Tradicional</span>
-            <h4 class="font-bold text-slate-900 text-base mt-2">Espinacas, Garbanzos y Bacalao</h4>
-            <p class="text-xs text-slate-600 mt-2">Hojas de espinaca baby, garbanzos, gajos de naranja natural, bacalao desmigado y aceitunas negras.</p>
+            <p class="text-xs text-slate-600 mt-2">Tomate, cebolla morada, pimiento, garbanzos cocidos, anchoas o boquerones en vinagre, yogur y eneldo o perejil fresco.</p>
           </div>
 
           <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-md transition-all">
@@ -828,94 +996,254 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECTION 4: SALTEADOS Y BOLOÑESA -->
+    <!-- SECTION 4: BARBACOAS & EVENTOS SOCIALES (NUEVA VERSIÓN) -->
     <!-- ========================================== -->
-    <section id="sec-salteados" class="tab-content hidden space-y-8">
+    <section id="sec-barbacoas" class="tab-content hidden space-y-8">
       
-      <!-- Banner -->
-      <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-red-500 text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+      <!-- Banner Barbacoas -->
+      <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600 text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden">
         <div class="relative z-10 max-w-2xl">
           <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider text-white mb-3 inline-block">
-            Sección 04 • Cocina Rápida en 10 Minutos
+            Sección 04 • Eventos Sociales & En Casa
           </span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Salteados y Boloñesa Vegetal</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Barbacoas & Comidas Sociales</h2>
           <p class="text-orange-50 text-sm sm:text-base mt-2">
-            Preparaciones calientes o templadas ideales para cenas express aprovechando conservas de legumbre de calidad.
+            Estrategias sencillas, tips y alternativas deliciosas para cuando nos reunimos alrededor de la mesa con amigos o familia sin perder el equilibrio.
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        <!-- Sautés Grid -->
-        <div class="lg:col-span-7 bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-          <h3 class="text-xl font-serif font-bold text-slate-900 mb-4">Recetas Express de Salteados</h3>
-          
-          <div class="space-y-3.5">
-            <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
-              <div class="p-2 bg-orange-100 text-orange-700 rounded-lg shrink-0 mt-0.5">
-                <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">Lentejas con Pisto y Pollo / Jamón</h4>
-                <p class="text-xs text-slate-600 mt-1">Sofreír pisto en conserva, añadir 1 taza de lentejas cocidas y terminar con taquitos de jamón o pollo asado.</p>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
-              <div class="p-2 bg-orange-100 text-orange-700 rounded-lg shrink-0 mt-0.5">
-                <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">Alubias Blancas con Gambitas y Cherrys</h4>
-                <p class="text-xs text-slate-600 mt-1">Saltear ajo, tomates cherry enteros, calabacín, pimiento y gambitas. Incorporar alubias blancas al final.</p>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
-              <div class="p-2 bg-orange-100 text-orange-700 rounded-lg shrink-0 mt-0.5">
-                <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">Garbanzos con Grelos y Pulpo</h4>
-                <p class="text-xs text-slate-600 mt-1">Salteado tradicional galleguizado con garbanzos, grelos cocidos, rodajas de pulpo hervido y pimentón de la Vera.</p>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
-              <div class="p-2 bg-orange-100 text-orange-700 rounded-lg shrink-0 mt-0.5">
-                <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">Alubias con Escalivada y Atún</h4>
-                <p class="text-xs text-slate-600 mt-1">Mezclar alubias en la sartén con pimiento y berenjena asada, piñones, aceitunas negras y lomos de atún.</p>
-              </div>
-            </div>
+      <!-- MAIN BARBACOA SALUDABLE CARD -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+          <div class="p-3 bg-orange-100 text-orange-600 rounded-xl">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-[11px] font-bold text-orange-700 uppercase tracking-wider block">Cómo Versionar</span>
+            <h3 class="text-2xl font-serif font-bold text-slate-900">La Barbacoa Saludable: Tips & Ideas</h3>
           </div>
         </div>
 
-        <!-- Bolognese Special Feature -->
-        <div class="lg:col-span-5 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-serif font-bold text-slate-900">Boloñesa de Lentejas o Soja</h3>
-              <span class="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Multi-usos</span>
-            </div>
-            <p class="text-xs text-slate-600 mb-4">
-              Sustituye la carne picada tradicional por lentejas hervidas o soja texturizada hidratada. Cocina con soffritto abundante de cebolla, zanahoria, tomate, apio y orégano.
-            </p>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Una barbacoa no tiene por qué ser sinónimo únicamente de procesados, chorizos y morcillas. La parrilla resalta el sabor natural de los alimentos de forma increíble. ¡Apunta estas ideas!
+        </p>
 
-            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Úsala para Rellenar:</h4>
-            <div class="grid grid-cols-2 gap-2 text-xs">
-              <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 font-medium">🌯 Fajitas & Burritos</div>
-              <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 font-medium">🥔 Patata Asada</div>
-              <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 font-medium">🍆 Musaka de Berenjena</div>
-              <div class="p-2.5 bg-slate-50 rounded-lg border border-slate-200 font-medium">🍝 Canelones & Lasaña</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Bloque 1: Verduras a la Parrilla -->
+          <div class="bg-orange-50/50 border border-orange-200/70 rounded-2xl p-5 space-y-3">
+            <div class="flex items-center gap-2 text-orange-800 font-bold text-sm">
+              <i data-lucide="carrot" class="w-4 h-4 text-orange-600"></i>
+              <span>1. Verduras a la Brasa</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Las gran olvidadas de las barbacoas. Quedan espectaculares:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside">
+              <li>Rodajas de calabacín, berenjena y cebolla.</li>
+              <li>Pimientos rojos y verdes enteros o a tiras.</li>
+              <li>Espárragos trigueros y champiñones portobello.</li>
+              <li>Mazorcas de maíz tierno a la parrilla.</li>
+              <li>Brochetas de verduras variadas con tomatitos.</li>
+            </ul>
+          </div>
+
+          <!-- Bloque 2: Proteínas de Calidad -->
+          <div class="bg-amber-50/50 border border-amber-200/70 rounded-2xl p-5 space-y-3">
+            <div class="flex items-center gap-2 text-amber-800 font-bold text-sm">
+              <i data-lucide="utensils-crossed" class="w-4 h-4 text-amber-600"></i>
+              <span>2. Proteínas Magras & Variadas</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Combina o sustituye los embutidos grasos por:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside">
+              <li>Brochetas de pechuga/contramuslo con verduras.</li>
+              <li>Solomillo de cerdo o pavo adobado casero.</li>
+              <li>Pescados a la parrilla: sardinas, sepia o calamares.</li>
+              <li>Gambones o brochetas de langostinos al ajillo.</li>
+              <li>Hamburguesas caseras de pollo, ternera o lentejas.</li>
+            </ul>
+          </div>
+
+          <!-- Bloque 3: Marinados y Salsas Caseras -->
+          <div class="bg-rose-50/50 border border-rose-200/70 rounded-2xl p-5 space-y-3">
+            <div class="flex items-center gap-2 text-rose-800 font-bold text-sm">
+              <i data-lucide="sparkles" class="w-4 h-4 text-rose-600"></i>
+              <span>3. Marinados & Salsas Caseras</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Evita salsas industriales cargadas de azúcares y aceites refinados:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside">
+              <li><strong>Salsa Tzatziki:</strong> Yogur griego + pepino + ajo + menta + limón.</li>
+              <li><strong>Chimichurri casero:</strong> Perejil + ajo + orégano + vinagre + AOVE.</li>
+              <li><strong>Guacamole fresco:</strong> Aguacate + lima + tomate + cebolla.</li>
+              <li><strong>Marinado:</strong> Limón, pimentón de la Vera, ajo y tomillo.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SNACKS SALUDABLES PARA LA MESA -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Picoteo Inteligente</span>
+          <h3 class="text-2xl font-serif font-bold text-slate-900 mt-1">Snacks para Sacar a la Mesa (Más allá de las patatas de bolsa)</h3>
+          <p class="text-xs text-slate-500 mt-1">Sustituye o acompaña los ultraprocesados típicos por aperitivos apetecibles, vistosos y nutritivos:</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+          
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🥕</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Crudités con Hummus o Dips</h4>
+              <p class="text-slate-600 mt-1">Bastoncillos de zanahoria, pepino, apio y pimiento para untar con cualquier hummus o paté del recetario.</p>
             </div>
           </div>
 
-          <div class="mt-6 p-3 bg-amber-50 rounded-xl border border-amber-200 text-xs text-amber-900">
-            <strong>Pro Tip:</strong> Prepara una sartén grande y congela porciones individuales en tuppers para resolver comidas en 2 minutos.
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🫒</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Aceitunas & Encurtidos</h4>
+              <p class="text-slate-600 mt-1">Pepinillos, cebolletas, alcaparras y aceitunas aliñadas. Aportan saciedad con muy pocas calorías.</p>
+            </div>
+          </div>
+
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🫘</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Altramuces (Lupines) & Edamame</h4>
+              <p class="text-slate-600 mt-1">Proteína picoteable rápida. Cocina el edamame al vapor con escamas de sal salteado con pimentón.</p>
+            </div>
+          </div>
+
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🥜</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Frutos Secos al Natural o Tostados</h4>
+              <p class="text-slate-600 mt-1">Almendras, anacardos, pistachos o nueces (sin freír y sin exceso de sal añadida).</p>
+            </div>
+          </div>
+
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🍅</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Tomatitos Cherry & Mozzarella</h4>
+              <p class="text-xs text-slate-600 mt-1">Brochetas miniatura con cherrys, bolitas de mozzarella y una hojita de albahaca con un chorrito de AOVE.</p>
+            </div>
+          </div>
+
+          <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-start gap-3">
+            <span class="p-2 bg-emerald-600 text-white rounded-lg shrink-0 font-bold">🐚</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Enlatados de Mar (Berberechos / Mejillones)</h4>
+              <p class="text-slate-600 mt-1">Lata de berberechos o mejillones al natural servidos con un buen chorro de limón y pimienta negra recién molida.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- IDEAS DE BEBIDAS & POSTRES EN PARALELO -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- CARD: IDEAS DE BEBIDAS -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50/60 rounded-2xl p-6 sm:p-8 border border-blue-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4 pb-3 border-b border-blue-200/60">
+              <div class="p-2.5 bg-blue-600 text-white rounded-xl shadow-2xs">
+                <i data-lucide="glass-water" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-blue-700 uppercase tracking-wider block">Hidratación Consciente</span>
+                <h3 class="text-xl font-serif font-bold text-slate-900">Ideas de Bebidas para Eventos</h3>
+              </div>
+            </div>
+
+            <div class="p-3.5 bg-white/90 rounded-xl border border-blue-200/60 mb-4 text-xs text-slate-700 leading-relaxed font-medium">
+              Siempre priorizaremos el agua como bebida de referencia. No obstante, soy consciente de que entramos en fechas donde hay más eventos sociales que invitan a tomar otras cosas. Te dejo algunas ideas:
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-700">
+              <li class="p-3 bg-white/80 rounded-xl border border-blue-100 flex items-start gap-2.5">
+                <i data-lucide="sparkles" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-900 block font-bold">Mejor Opción:</strong>
+                  Agua con gas servida con bastante hielo, hojas de menta o hierbabuena fresca, rodajitas de limón o lima, o gotitas de saborizante sin azúcar.
+                </div>
+              </li>
+
+              <li class="p-3 bg-white/80 rounded-xl border border-blue-100 flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-900 block font-bold">Refrescos:</strong>
+                  Priorizar versiones ZERO (las versiones light siguen llevando bastante cantidad de azúcar).
+                </div>
+              </li>
+
+              <li class="p-3 bg-white/80 rounded-xl border border-blue-100 flex items-start gap-2.5">
+                <i data-lucide="plus-circle" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-900 block font-bold">Más Ideas Refrescantes:</strong>
+                  Kombucha, zumo de tomate preparado con hielo y limón, o proteína en polvo tipo Hydro (tienen base acuosa frutal muy ligera y se mezclan directamente con agua y hielo).
+                </div>
+              </li>
+
+              <li class="p-3 bg-white/80 rounded-xl border border-blue-100 flex items-start gap-2.5">
+                <i data-lucide="beer" class="w-4 h-4 text-blue-600 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-900 block font-bold">Cerveza / Alcohol:</strong>
+                  Priorizar cerveza sin alcohol. Si se consume alcohol para acompañar una comida o cena: ser muy conscientes de la cantidad, intercalar siempre con vasos de agua, u optar por vino en lugar de cerveza (el vino se bebe más lento y por tanto se consume menor cantidad).
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD: IDEAS DE POSTRES -->
+        <div class="bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100/60 rounded-2xl p-6 sm:p-8 border border-pink-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4 pb-3 border-b border-pink-200/60">
+              <div class="p-2.5 bg-pink-600 text-white rounded-xl shadow-2xs">
+                <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold text-pink-700 uppercase tracking-wider block">El Cierre Perfecto</span>
+                <h3 class="text-xl font-serif font-bold text-slate-900">Postres Dulces & Saludables</h3>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-slate-700">
+              <div class="p-4 bg-white/90 rounded-xl border border-pink-200/60 shadow-2xs">
+                <h4 class="font-bold text-pink-800 text-sm mb-1 flex items-center gap-1.5">
+                  🍉 1. La Fruta: El Postre por Excelencia
+                </h4>
+                <p class="leading-relaxed text-slate-600">
+                  En verano nada supera a una buena tajada de <strong>sandía o melón cortaditos a trozos bien fresquitos</strong> sacados directamente de la nevera. También puedes preparar brochetas de fruta variada (piña, melocotón, uvas) para hacerla más vistosa.
+                </p>
+              </div>
+
+              <div class="p-4 bg-white/90 rounded-xl border border-pink-200/60 shadow-2xs">
+                <h4 class="font-bold text-pink-800 text-sm mb-1 flex items-center gap-1.5">
+                  🍦 2. Opciones Elaboradas: Helados Caseros
+                </h4>
+                <p class="leading-relaxed text-slate-600">
+                  Si quieres sorprender a tus invitados con una opción cremosa y 100% saludable o quieres tener una opción de merienda o postre fresquito para estas fechas, tienes una sección dedicada exclusivamente a <strong>Helados Caseros Saludables</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-pink-200/60">
+            <button onclick="switchTab('helados')" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-4 rounded-xl text-xs transition-all flex items-center justify-center gap-2 shadow-xs">
+              <i data-lucide="ice-cream" class="w-4 h-4"></i>
+              <span>Ir a la Sección de Helados Caseros Saludables</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
           </div>
         </div>
 
@@ -924,7 +1252,148 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- SECTION 5: RECURSOS Y DOCUMENTOS EXTRA -->
+    <!-- SECTION 5: HELADOS CASEROS SALUDABLES (NUEVA SECCIÓN) -->
+    <!-- ========================================== -->
+    <section id="sec-helados" class="tab-content hidden space-y-8">
+      
+      <!-- Banner Helados -->
+      <div class="bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 text-white rounded-2xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+        <div class="relative z-10 max-w-2xl">
+          <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider text-white mb-3 inline-block">
+            Sección 05 • Dulce & Cremoso
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">Helados Caseros Saludables</h2>
+          <p class="text-pink-50 text-sm sm:text-base mt-2">
+            Disfruta de helados cremosos, nutritivos y sin azúcares añadidos. Con frutas congeladas y lácteos de calidad
+          </p>
+        </div>
+      </div>
+
+      <!-- LINK DESTACADO A INSTAGRAM DE ESTHER -->
+      <div class="bg-gradient-to-r from-fuchsia-600 via-pink-600 to-rose-600 text-white rounded-2xl p-6 shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="p-3.5 bg-white/20 rounded-2xl backdrop-blur-md shrink-0">
+            <i data-lucide="instagram" class="w-8 h-8 text-white"></i>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-pink-200 block">Vídeo & Recetas en Redes</span>
+            <h3 class="text-xl font-bold font-serif">Ejemplos de Helados Saludables en Instagram</h3>
+            <p class="text-xs text-pink-100 mt-1 max-w-xl">
+              Accede a mi publicación interactiva de Instagram donde muestro paso a paso cómo preparar estas ideas de helados cremosos y saludables.
+            </p>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/p/DaK8FPTDTp7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold px-5 py-3 rounded-xl text-xs hover:bg-pink-50 transition-all shadow-md shrink-0 w-full sm:w-auto justify-center">
+          <span>Ver Publicación en Instagram</span>
+          <i data-lucide="external-link" class="w-4 h-4 text-pink-600"></i>
+        </a>
+      </div>
+
+      <!-- FÓRMULA DE MONTAJE DE HELADOS -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-2">Fórmula Base para un Helado Cremoso Casero</h3>
+        <p class="text-xs text-slate-500 mb-6">Sigue estos simples pasos para crear polos o tarrinas de cualquier sabor en minutos:</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          
+          <div class="p-4 bg-pink-50/60 rounded-xl border border-pink-100">
+            <span class="font-bold text-pink-800 text-sm block mb-2">1. Base Cremosa</span>
+            <p class="text-slate-600 leading-relaxed">
+              • Fruta congelada (Plátano maduro, fresas, mango, frutos rojos).<br>
+              • Lácteos: Yogur griego natural, queso fresco batido o requesón.<br>
+              • Extra proteico:Proteína en polvo para un extra de proteína y sabor diferente.
+            </p>
+          </div>
+
+          <div class="p-4 bg-pink-50/60 rounded-xl border border-pink-100">
+            <span class="font-bold text-pink-800 text-sm block mb-2">2. Sabor & Dulzor</span>
+            <p class="text-slate-600 leading-relaxed">
+              • Cacao puro en polvo (desgrasado).<br>
+              • Cremas 100% de frutos secos (cacahuete, avellana, almendra).<br>
+              • Esencia de vainilla, canela o pasta de dátiles/miel opcional.
+            </p>
+          </div>
+
+          <div class="p-4 bg-pink-50/60 rounded-xl border border-pink-100">
+            <span class="font-bold text-pink-800 text-sm block mb-2">3. Triturado & Congelación</span>
+            <p class="text-slate-600 leading-relaxed">
+              Triturar a máxima potencia hasta lograr consistencia de helado cremoso. Consumir al momento tipo "soft" o verter en moldes de polo / tarrinas durante 3-4 horas.
+            </p>
+          </div>
+
+          <div class="p-4 bg-pink-50/60 rounded-xl border border-pink-100">
+            <span class="font-bold text-pink-800 text-sm block mb-2">4. Toppings Crujientes</span>
+            <p class="text-slate-600 leading-relaxed">
+              • Cobertura de chocolate negro (>85%) derretido.<br>
+              • Frutos secos picados (almendras, avellanas).<br>
+              • Coco rallado o chispas de chocolate.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GALERÍA DE RECETAS CONCRETAS DE HELADOS -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+        <h3 class="text-xl font-serif font-bold text-slate-900 mb-6">4 Combinaciones Estrella para Probar</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Receta 1: Bombón Cacahuete -->
+          <div class="p-5 rounded-2xl border border-pink-100 bg-pink-50/30 hover:bg-white hover:shadow-md transition-all flex items-start gap-4">
+            <div class="p-3 bg-pink-500 text-white rounded-xl text-xl font-bold shrink-0">🥜</div>
+            <div>
+              <span class="text-[10px] font-bold bg-pink-100 text-pink-800 px-2 py-0.5 rounded uppercase">Estilo Magnum</span>
+              <h4 class="font-bold text-slate-900 text-base mt-1">Helado Bombón de Cacahuete & Cacao</h4>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Tritura 2 plátanos congelados con 2 cdas. de crema de cacahuete 100%, 1 cda. de cacao puro desgrasado y un chorrito de bebida vegetal, pon en moldes y congela, después báñalos con chocolate negro (85%) fundido y almendra picada y vuelve a congelar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Receta 2: Fresas con Yogur -->
+          <div class="p-5 rounded-2xl border border-pink-100 bg-pink-50/30 hover:bg-white hover:shadow-md transition-all flex items-start gap-4">
+            <div class="p-3 bg-rose-500 text-white rounded-xl text-xl font-bold shrink-0">🍓</div>
+            <div>
+              <span class="text-[10px] font-bold bg-rose-100 text-rose-800 px-2 py-0.5 rounded uppercase">Refrescante</span>
+              <h4 class="font-bold text-slate-900 text-base mt-1">Polo Cremoso de Fresas & Yogur Griego</h4>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Batir 200g de fresas congeladas con 1 yogur griego natural sin azúcar y unas gotas de esencia de vainilla. Verter en moldes de polo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Receta 3: Helado de Alubia Blanca -->
+          <div class="p-5 rounded-2xl border border-purple-100 bg-purple-50/30 hover:bg-white hover:shadow-md transition-all flex items-start gap-4">
+            <div class="p-3 bg-purple-600 text-white rounded-xl text-xl font-bold shrink-0">🫘</div>
+            <div>
+              <span class="text-[10px] font-bold bg-purple-100 text-purple-800 px-2 py-0.5 rounded uppercase">Sorpresa Nutritiva</span>
+              <h4 class="font-bold text-slate-900 text-base mt-1">Helado Mousse de Chocolate & Alubia Blanca</h4>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                ¡No sabe a legumbre! Tritura 150g de alubias blancas bien lavadas con 1 plátano congelado, 2 cdas. de cacao puro, 1 cda. de crema de avellanas y 3 cdas. de leche/bebida vegetal. Textura de helado de vitrina.
+              </p>
+            </div>
+          </div>
+
+          <!-- Receta 4: Proteico de Mango & Coco -->
+          <div class="p-5 rounded-2xl border border-amber-100 bg-amber-50/30 hover:bg-white hover:shadow-md transition-all flex items-start gap-4">
+            <div class="p-3 bg-amber-500 text-white rounded-xl text-xl font-bold shrink-0">🥭</div>
+            <div>
+              <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded uppercase">Tropical</span>
+              <h4 class="font-bold text-slate-900 text-base mt-1">Helado Proteico de Mango, Queso Batido & Coco</h4>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Mezcla 150g de mango congelado en dados con 150g de queso fresco batido y proteina en polvo neutra o de chocolate blanco. Sirve en tarrina con coco rallado y semillas de chía para decorar.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 6: RECURSOS Y DOCUMENTOS EXTRA -->
     <!-- ========================================== -->
     <section id="sec-recursos" class="tab-content hidden space-y-8">
       
@@ -942,9 +1411,33 @@
       </div>
 
       <!-- Resource Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- Card 1: Documento de Ampliación -->
+        <!-- Card 1: Consejos Vacaciones & Salidas Sociales -->
+        <a href="https://drive.google.com/file/d/1phczWpBJgwLAfM5pKQE42--o8P5dmBPD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg hover:border-amber-400 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="p-3 bg-amber-50 text-amber-600 rounded-xl group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                <i data-lucide="sun-medium" class="w-6 h-6"></i>
+              </span>
+              <span class="text-xs font-semibold text-amber-700 bg-amber-100 px-3 py-1 rounded-full flex items-center gap-1">
+                Guía Práctica PDF <i data-lucide="external-link" class="w-3 h-3"></i>
+              </span>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-slate-900 group-hover:text-amber-600 transition-colors mb-2">
+              Guía de Vacaciones & Salidas Sociales
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Consejos prácticos para gestionar eventos, salidas y vacaciones sin culpabilidad ni restricciones extremas, manteniendo la flexibilidad y la salud.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-bold text-amber-600 group-hover:translate-x-1 transition-transform">
+            <span>Abrir guía en Google Drive</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+          </div>
+        </a>
+
+        <!-- Card 2: Documento de Ampliación -->
         <a href="https://drive.google.com/file/d/1zkR5wbGodoqCJTHEkLTJA_ejXDL9dviJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg hover:border-purple-300 transition-all flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -959,7 +1452,7 @@
               Guía de Ampliación & Recetario Completo
             </h3>
             <p class="text-xs text-slate-600 leading-relaxed">
-              Consulta el documento en Google Drive con todos los detalles nutricionales, recomendaciones adicionales y pautas para tus menús de verano.
+              Ideas de recetas visuales concretas (cremas fresquitas, y ensaladas de legumbres) con recordatorio de la distribución del método del plato.
             </p>
           </div>
           <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-bold text-purple-600 group-hover:translate-x-1 transition-transform">
@@ -968,7 +1461,7 @@
           </div>
         </a>
 
-        <!-- Card 2: Visualización Ensaladas Plato Completo -->
+        <!-- Card 3: Visualización Ensaladas Plato Completo -->
         <a href="https://drive.google.com/file/d/1O6Q_U3HFk38UT2pfpucE2LPiSnvuhRbn/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg hover:border-emerald-300 transition-all flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -983,7 +1476,7 @@
               Guía Visual: Ensalada como Plato Completo
             </h3>
             <p class="text-xs text-slate-600 leading-relaxed">
-              Visualiza la estructura nutricional balanceada para convertir cualquier ensalada de legumbres en un plato completo, saciante y equilibrado.
+              Infografía para convertir cualquier ensalada en un plato completo, saciante y equilibrado.
             </p>
           </div>
           <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-bold text-emerald-600 group-hover:translate-x-1 transition-transform">
