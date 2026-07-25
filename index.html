@@ -1568,6 +1568,26 @@
         }
       });
     }
+
+    //FUNCIÓN DE CONTRASEÑA
+    function checkPassword(event) {
+      event.preventDefault();
+
+      const input = document.getElementById("passwordInput");
+      const modal = document.getElementById("passwordModal");
+      const content = document.getElementById("appContent");
+      const error = document.getElementById("passwordError");
+
+      if (input.value === "verano2026") {
+        modal.style.display = "none";
+        content.classList.remove("hidden");
+        lucide.createIcons(); // carga los iconos cuando se desbloquea
+      } else {
+        error.classList.remove("hidden");
+        setTimeout(() => error.classList.add("hidden"), 2000);
+      }
+    }
   </script>
+
 </body>
 </html>
